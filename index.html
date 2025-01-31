@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="calculadora">
+    <input type="text" class="tela" id="tela" value="0" disabled>
+    <div class="buttons">
+    <button onclick="limpaTela('AC')" class="limpa">AC</button>
+    <button onclick="delCaracter('Del')" class="exclui">&larr;</button>
+    <button onclick="Percent('%')" class="operator">%</button>
+    <button onclick="operation('/')" class="operator">&divide;</button>
+
+    <button onclick="acrescenteNum('7')">7</button>
+    <button onclick="acrescenteNum('8')">8</button>
+    <button onclick="acrescenteNum('9')">9</button>
+    <button onclick="operation('*')" class="operator">&times;</button>
+
+    <button onclick="acrescenteNum('4')">4</button>
+    <button onclick="acrescenteNum('5')">5</button>
+    <button onclick="acrescenteNum('6')">6</button>
+    <button onclick="operation('-')" class="operator">&minus;</button>
+
+    <button onclick="acrescenteNum('1')">1</button>
+    <button onclick="acrescenteNum('2')">2</button>
+    <button onclick="acrescenteNum('3')">3</button>
+    <button onclick="operation('+')" class="operator">&plus;</button>
+
+    <button onclick="acrescenteNum('0')">0</button>
+    <button onclick="acrescenteNum('.')">.</button>
+    <button onclick="calculate('=')" class="calcula">&equals;</button>
+    <button onclick="Factorial('!')" class="operator">!</button>
+</div>
+
+  </div>
+ <script src="./script.js"></script>   
+</body>
+</html>
